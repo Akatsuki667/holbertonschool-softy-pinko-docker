@@ -6,3 +6,6 @@
 	- Update APT using apt-get update
 	- Upgrade currently installed software through APT using apt-get upgrade -y
 	- Once built, you can run the Docker image in a container and it will echo “Hello, World!” on the terminal.
+
+## 1. Back-end
+- For this task, start by making a copy of your `task0` directory and name it `task1`. Next, we want to change the `Dockerfile` to install Python3, pip3, and Flask. You may not have used Flask, yet, but not to worry; for this project, we will give you all of the Flask code you need to get started. We’ll validate that all have been installed correctly by running a Flask server with one endpoint that when called returns “Hello, World!”
