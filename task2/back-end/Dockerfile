@@ -1,9 +1,11 @@
-MAJ du Dockerfile avec :
-- On garde notre code de la task
-- Installation de python3, pip3 et flask
-- Run du serveur avec flask
+# Utilisation de la dernière version d'Ubuntu
+FROM ubuntu:latest
 
-Code : 
+# Installe les packages 
+RUN apt-get update
+
+# Fais une mise à niveau des packages
+RUN apt-get upgrade -y
 
 # Installation de Python3 et pip3
 RUN apt-get install -y python3 python3-pip
@@ -22,11 +24,3 @@ COPY api.py .
 
 # Run du serveur Flask
 CMD ["python3", "api.py"]
-
-Utilisation de deux commandes.
-
-Création de l'image : 
-docker build -t softy-pinko:task1 .
-
-Exécution du conteneur : 
-docker run -it --rm -p 5252:5252 --name softy-pinko-task1 softy-pinko:task1

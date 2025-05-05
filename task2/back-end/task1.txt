@@ -25,8 +25,8 @@ CMD ["python3", "api.py"]
 
 Utilisation de deux commandes.
 
-Création de l'image : 
+Création de l'image :
 docker build -t softy-pinko:task1 .
 
-Exécution du conteneur : 
+Exécution du conteneur :
 docker run -it --rm -p 5252:5252 --name softy-pinko-task1 softy-pinko:task1
