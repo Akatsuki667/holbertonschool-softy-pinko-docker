@@ -14,3 +14,7 @@
 - For this task, start by making a copy of your `task1` directory and name it `task2`. We have created a very simple API server with one route that returns “Hello, World!” and now we want to create a web page to view content from our API server in the context of a more full front-end. Before creating our front end, let’s reorganize this project a bit in our `task2` directory.
 	- Create a new directory named `back-end` inside of your `task2` directory.
 	- Move all of the files currently in task2 inside of the new back-end directory.
+
+## 3. Connecting the Front-end and Back-end
+- To start this task, make a copy of your `task2` directory and name it `task3`.
+- This task will have you connect your front-end to the back-end allowing you to have dynamic data on your front-end. This means that communication will occur between your two Docker images (each of which will be running in their own Docker container). To facilitate this, be sure to have multiple terminal instances open so you can have one Docker container running on each.
